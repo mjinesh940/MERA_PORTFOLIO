@@ -1,4 +1,3 @@
-import React from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Navigation, Pagination, Autoplay } from 'swiper/modules';
 import 'swiper/css';
@@ -40,12 +39,12 @@ const Skills = () => {
           navigation
           pagination={{ clickable: true }}
           loop={true}
-          autoplay={{ delay: 2500, disableOnInteraction: false }}
+          autoplay={{ delay: 1000, disableOnInteraction: false }}
           slidesPerView={1}
           breakpoints={{
             640: { slidesPerView: 2, spaceBetween: 20 },
             768: { slidesPerView: 3, spaceBetween: 30 },
-            1024: { slidesPerView: 4, spaceBetween: 40 },
+            1024: { slidesPerView:4, spaceBetween: 40 },
           }}
         >
           {skills.map((skill, index) => (
