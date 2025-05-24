@@ -1,0 +1,125 @@
+.certifications-section {
+  max-width: 1200px;
+  margin: 10px auto;
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.certifications-section h2 {
+  font-size: 2.8rem;
+  margin-bottom: 10px;
+  color: #ffffff;
+  position: relative;
+  display: inline-block;
+  padding-bottom: 10px;
+  border-bottom: none;
+}
+
+.certifications-section h2::after {
+  content: '';
+  position: absolute;
+  width: 270%;
+  height: 4px;
+  border-bottom: 2px solid #007bff;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 0;
+  border-radius: 5px;
+}
+
+.cert-subtitle {
+  font-size: 1.2rem;
+  margin-bottom: 40px;
+  color: #ccc;
+}
+
+.cert-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 30px;
+  justify-items: center;
+  margin-top: 40px;
+}
+
+.cert-card {
+  border-radius: 12px;
+  padding: 25px 20px;
+  width: 100%;
+  max-width: 350px;
+  text-align: left;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s ease;
+  background: transparent;
+}
+
+.cert-card:hover {
+  transform: translateY(-5px);
+}
+
+.cert-card h3 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+  color: #00d9ff;
+  font-weight: bold;
+  border-bottom: 2px solid #007bff;
+  padding-bottom: 5px;    
+  transition: border-color 0.3s ease-in-out;       
+}
+
+
+.cert-card p {
+  font-size: 1rem;
+  color: #ccc;
+  margin-bottom: 8px;
+}
+
+.cert-card a {
+  color: #ff4c4c;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.cert-card a:hover {
+  text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+  .certifications-section h2 {
+    font-size: 2.2rem;
+  }
+
+  .cert-subtitle {
+    font-size: 1.1rem;
+  }
+
+  .cert-list {
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 20px;
+  }
+
+  .cert-card {
+    padding: 20px 15px;
+  }
+}
+
+@media (max-width: 480px) {
+  .certifications-section h2 {
+    font-size: 2rem;
+  }
+
+  .cert-subtitle {
+    font-size: 1rem;
+  }
+
+  .cert-card h3 {
+    font-size: 1.3rem;
+  }
+
+  .cert-card p {
+    font-size: 0.95rem;
+  }
+
+  .cert-card a {
+    font-size: 0.95rem;
+  }
+}

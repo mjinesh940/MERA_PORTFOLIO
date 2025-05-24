@@ -1,0 +1,92 @@
+.home {
+  position: relative;
+  color: #ecf0f1;
+  padding: 20px 0;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  z-index: 10;
+}
+
+.home::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.4);
+  z-index: 0;
+}
+
+.home > * {
+  position: relative;
+  z-index: 1;
+}
+
+.home h1,
+.home h2,
+.home h3 {
+  animation: fadeIn 0.5s ease-in;
+}
+
+.intro-text {
+  max-width: 600px;
+  text-align: center;
+  margin: 20px 0;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@media (max-width: 768px) {
+  .home {
+    padding: 10px;
+  }
+
+  .intro-text {
+    max-width: 90%;
+    font-size: 0.9rem;
+    margin: 10px 0;
+  }
+
+  .home h1 {
+    font-size: 1.5rem;
+  }
+
+  .home h2 {
+    font-size: 1.2rem;
+  }
+
+  .home h3 {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .home {
+    padding: 8px;
+  }
+
+  .home h1 {
+    font-size: 1.3rem;
+  }
+
+  .home h2 {
+    font-size: 1rem;
+  }
+
+  .home h3 {
+    font-size: 0.9rem;
+  }
+}

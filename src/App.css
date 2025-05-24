@@ -1,0 +1,156 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body, .app-container {
+  height: 100vh;
+  width: 100vw;
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+  background: url('./images/background') no-repeat center center fixed;
+  background-size: cover;
+  color: #b4abab;
+  overflow-x: hidden;
+  position: relative;
+}
+
+.app-container {
+  min-height: 100vh;
+  z-index: 4;
+  position: relative;
+  background: rgba(0, 0, 0, 0.60);
+}
+
+.app-container::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: -10;
+}
+
+a {
+  text-decoration: none;
+  color: #007bff;
+  transition: color 0.3s ease-in;
+}
+
+ul {
+  list-style-type: none;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin-bottom: 1.5rem;
+  color: #222;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+h1 {
+  font-size: 3rem;
+  color: #007bff;
+  text-shadow: 0px 4px 10px rgba(0, 123, 255, 0.2);
+}
+
+h2 {
+  font-size: 2.5rem;
+  border-bottom: 2px solid #007bff;
+  padding-bottom: 10px;
+}
+
+h3 {
+  font-size: 2rem;
+}
+
+p {
+  margin-bottom: 1.5rem;
+  color: #555;
+  line-height: 1.8;
+  font-size: 1rem;
+}
+
+a:hover {
+  color: #0056b3;
+}
+
+button, .btn {
+  display: inline-block;
+  background-color: #007bff;
+  color: white;
+  padding: 0.8rem 1.5rem;
+  font-size: 1rem;
+  border: none;
+  cursor: pointer;
+  border-radius: 4px;
+  transition: background-color 0.3s ease-in, transform 0.2s;
+}
+
+button:hover, .btn:hover {
+  background-color: #0056b3;
+  transform: translateY(-2px);
+}
+
+section {
+  padding: 4rem 0;
+  background-color: transparent;
+}
+
+.section-title {
+  font-size: 2.5rem;
+  color: #007bff;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.section-title span {
+  color: #333;
+}
+
+input, textarea {
+  width: 100%;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  border: 1px solid #ddd;
+  background-color: #fff;
+  color: #333;
+  border-radius: 4px;
+  transition: border-color 0.3s;
+}
+
+input::placeholder, textarea::placeholder {
+  color: #888;
+}
+
+input:focus, textarea:focus {
+  outline: none;
+  border-color: #007bff;
+}
+
+footer {
+  margin-top: auto;
+  background-color: #e9ecef;
+  padding: 1rem 0;
+  text-align: center;
+  color: #555;
+}
+
+@media (max-width: 768px) {
+  .grid-2, .grid-3, .grid-4 {
+    grid-template-columns: 1fr;
+  }
+
+  button, .btn {
+    padding: 0.6rem 1.2rem;
+  }
+}
