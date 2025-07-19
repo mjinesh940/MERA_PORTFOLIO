@@ -21,8 +21,7 @@ const About = () => {
             My experience includes leading development teams, designing innovative solutions, and excelling in academic and professional environments.
           </p>
         </div>
-
-        {/* ✅ Reuse the Skills Component */}
+        
         <Skills />
 
         <div className="about-extra">
