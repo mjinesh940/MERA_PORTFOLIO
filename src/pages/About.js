@@ -11,14 +11,13 @@ const About = () => {
       </div>
       <div className="about-content">
         <div className="about-text">
-          <p>
-            Hi, I'm <strong>Jinesh Jitendra Modi</strong>, a passionate Software Engineer specializing in Full-Stack Development. 
-            I thrive on building scalable, dynamic, and user-friendly web applications. With expertise in 
-            <strong> Java, JavaScript, React, Spring Boot,</strong> and other modern technologies, I aim to deliver robust solutions and exceptional code quality.
+          <p> Hi, I'm <strong>Jinesh Jitendra Modi</strong> — <strong>SAP ABAP ASSOCIATE</strong>. 
+              I love building scalable, dynamic, and user-friendly WEB & GUI applications with modern tech like 
+              <strong> SAP-ABAP, JAVA, JAVASCRIPT, REACT, and SPRING BOOT</strong>.
           </p>
           <p>
-            I am always eager to explore new challenges, contribute to impactful projects, and grow both professionally and personally. 
-            My experience includes leading development teams, designing innovative solutions, and excelling in academic and professional environments.
+              I enjoy solving real-world problems through clean, efficient code. 
+              I'm always eager to take on challenges, lead projects, and keep growing as a developer.
           </p>
         </div>
         
