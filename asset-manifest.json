@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/MERA_PORTFOLIO/static/css/main.7403f3c9.css",
+    "main.css": "/MERA_PORTFOLIO/static/css/main.48435046.css",
     "main.js": "/MERA_PORTFOLIO/static/js/main.964e8295.js",
     "static/js/453.1407b060.chunk.js": "/MERA_PORTFOLIO/static/js/453.1407b060.chunk.js",
     "static/media/background": "/MERA_PORTFOLIO/static/media/background.a92c41b851977e4abd99",
@@ -13,12 +13,12 @@
     "static/media/JAVA.png": "/MERA_PORTFOLIO/static/media/JAVA.f5dd86c3ef6ef3f85acf.png",
     "static/media/WebTech.png": "/MERA_PORTFOLIO/static/media/WebTech.d7648bf6a2be0b7f764f.png",
     "index.html": "/MERA_PORTFOLIO/index.html",
-    "main.7403f3c9.css.map": "/MERA_PORTFOLIO/static/css/main.7403f3c9.css.map",
+    "main.48435046.css.map": "/MERA_PORTFOLIO/static/css/main.48435046.css.map",
     "main.964e8295.js.map": "/MERA_PORTFOLIO/static/js/main.964e8295.js.map",
     "453.1407b060.chunk.js.map": "/MERA_PORTFOLIO/static/js/453.1407b060.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.7403f3c9.css",
+    "static/css/main.48435046.css",
     "static/js/main.964e8295.js"
   ]
 }
