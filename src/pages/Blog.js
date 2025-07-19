@@ -2,12 +2,13 @@ import React from 'react';
 import './Blog.css';
 import qrImage1 from '../images/QR_REACT_HOOKS.jpg';
 import qrImage2 from '../images/QR_SPRING_BOOT.jpg';
+import qrImage3 from '../images/QR_API.png';
 
 const Blog = () => {
   const blogPosts = [
     {
       title: 'Understanding React Hooks',
-      date: 'Oct 10, 2023',
+      date: 'APR 12, 2025',
       link: 'https://jmshines940.blogspot.com/2025/04/common-challenges-when-using-react.html',
       excerpt: 'Explore the common challenges developers face when using React Hooks and how to overcome them effectively.',
       hasQR: true,
@@ -15,7 +16,7 @@ const Blog = () => {
     },
     {
       title: 'Spring Boot Microservices',
-      date: 'Sep 20, 2023',
+      date: 'JUN 12, 2025',
       link: 'https://jmshines940.blogspot.com/2025/04/spring-boot-microservices-practical.html',
       excerpt: 'A beginner-friendly guide to building modular microservices using Spring Boot and best practices.',
       hasQR: true,
@@ -23,8 +24,17 @@ const Blog = () => {
     },
     {
       title: 'Building Scalable APIs',
-      date: 'Aug 15, 2023',
-      excerpt: 'Learn how to structure and scale your REST APIs using Java and modern architectural techniques.'
+      date: 'JUL 20, 2025',
+      link: 'https://jmshines940.blogspot.com/2025/07/building-scalable-apis.html',
+      excerpt: 'Learn how to structure and scale your REST APIs using Java and modern architectural techniques.',
+      hasQR: true,
+      qrImage: qrImage3
+    },
+    {
+      title: 'SAP ABAP BASICS',
+      date: 'JUL 30, 2024',
+      link: '',
+      excerpt: 'A guide to Learn how ABAP works for data manipulation (ALV reports, Scripts, smartforms, Adobe forms, Funtion modules, etc.)'
     }
   ];
 
