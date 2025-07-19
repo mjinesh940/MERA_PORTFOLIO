@@ -94,23 +94,44 @@
   .hero {
     flex-direction: column;
     height: auto;
-    padding-bottom: 2rem;
-  }
-
-  .hero-image {
-    width: 100%;
-    margin-bottom: 2rem;
-  }
-
-  .hero-content {
+    padding: 1rem;
     text-align: center;
   }
 
+  .hero-image {
+    flex: none;
+    width: 100%;
+    margin-bottom: 1.5rem;
+  }
+
+  .hero-image img {
+    width: 80%;
+    max-width: 250px;
+  }
+
+  .hero-content {
+    padding: 0 1rem;
+  }
+
   .hero-content h1 {
-    font-size: 2rem;
+    font-size: 1.8rem;
+    line-height: 2.2rem;
   }
 
   .hero-content p {
     font-size: 1rem;
+  }
+
+  .cta-section {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 2rem;
+  }
+
+  .cta-button {
+    width: 100%;
+    max-width: 250px;
+    margin: 0 auto;
   }
 }

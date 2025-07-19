@@ -104,3 +104,18 @@
     transform: scale(1);
   }
 }
+
+@media (max-width: 768px) {
+  .cta-section {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 2rem;
+  }
+
+  .cta-button {
+    width: 100%;
+    max-width: 250px;
+    margin: 0 auto;
+  }
+}
