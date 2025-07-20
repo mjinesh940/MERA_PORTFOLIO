@@ -3,6 +3,7 @@ import './Blog.css';
 import qrImage1 from '../images/QR_REACT_HOOKS.jpg';
 import qrImage2 from '../images/QR_SPRING_BOOT.jpg';
 import qrImage3 from '../images/QR_API.png';
+import qrImage4 from '../images/QR_ABAP_BASICS.png';
 
 const Blog = () => {
   const blogPosts = [
@@ -33,8 +34,10 @@ const Blog = () => {
     {
       title: 'SAP ABAP BASICS',
       date: 'JUL 30, 2024',
-      link: '',
-      excerpt: 'A guide to Learn how ABAP works for data manipulation (ALV reports, Scripts, smartforms, Adobe forms, Funtion modules, etc.)'
+      link: 'https://jmshines940.blogspot.com/2025/07/sap-system-abap-basics-your-gateway-to.html',
+      excerpt: 'A guide to Learn how ABAP works for data manipulation (ALV reports, Scripts, smartforms, Adobe forms, Funtion modules, etc.)',
+      hasQR: true,
+      qrImage: qrImage4
     }
   ];
 
