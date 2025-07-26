@@ -1,25 +1,26 @@
 {
   "files": {
-    "main.css": "/MERA_PORTFOLIO/static/css/main.48435046.css",
-    "main.js": "/MERA_PORTFOLIO/static/js/main.1f3f01a3.js",
+    "main.css": "/MERA_PORTFOLIO/static/css/main.2a1d5b09.css",
+    "main.js": "/MERA_PORTFOLIO/static/js/main.acf0b488.js",
     "static/js/453.1407b060.chunk.js": "/MERA_PORTFOLIO/static/js/453.1407b060.chunk.js",
     "static/media/background": "/MERA_PORTFOLIO/static/media/background.a92c41b851977e4abd99",
     "static/media/QR_REACT_HOOKS.jpg": "/MERA_PORTFOLIO/static/media/QR_REACT_HOOKS.b6a86779340dd0bbec0b.jpg",
     "static/media/QR_SPRING_BOOT.jpg": "/MERA_PORTFOLIO/static/media/QR_SPRING_BOOT.281b8fe23fec2f53bf2a.jpg",
     "static/media/ABAP.png": "/MERA_PORTFOLIO/static/media/ABAP.c9fd058240afdb2470b7.png",
     "static/media/DataAnalytics.png": "/MERA_PORTFOLIO/static/media/DataAnalytics.4981016c1148daf71776.png",
-    "static/media/QR_ABAP_BASICS.png": "/MERA_PORTFOLIO/static/media/QR_ABAP_BASICS.dd5d53773bef1f5ef5bf.png",
+    "static/media/QR_ABAP_BASICS.png": "/MERA_PORTFOLIO/static/media/QR_ABAP_BASICS.e405feab1fc067d6f065.png",
     "static/media/Spring.png": "/MERA_PORTFOLIO/static/media/Spring.e82018cf32e10af73393.png",
-    "static/media/QR_API.png": "/MERA_PORTFOLIO/static/media/QR_API.6a28e648a56c9728f64d.png",
     "static/media/JAVA.png": "/MERA_PORTFOLIO/static/media/JAVA.f5dd86c3ef6ef3f85acf.png",
+    "static/media/QR_API.png": "/MERA_PORTFOLIO/static/media/QR_API.565c72013c49d627cd47.png",
+    "static/media/QR_SAP_ODATA.png": "/MERA_PORTFOLIO/static/media/QR_SAP_ODATA.556e2d3b216ce7cb0dee.png",
     "static/media/WebTech.png": "/MERA_PORTFOLIO/static/media/WebTech.d7648bf6a2be0b7f764f.png",
     "index.html": "/MERA_PORTFOLIO/index.html",
-    "main.48435046.css.map": "/MERA_PORTFOLIO/static/css/main.48435046.css.map",
-    "main.1f3f01a3.js.map": "/MERA_PORTFOLIO/static/js/main.1f3f01a3.js.map",
+    "main.2a1d5b09.css.map": "/MERA_PORTFOLIO/static/css/main.2a1d5b09.css.map",
+    "main.acf0b488.js.map": "/MERA_PORTFOLIO/static/js/main.acf0b488.js.map",
     "453.1407b060.chunk.js.map": "/MERA_PORTFOLIO/static/js/453.1407b060.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.48435046.css",
-    "static/js/main.1f3f01a3.js"
+    "static/css/main.2a1d5b09.css",
+    "static/js/main.acf0b488.js"
   ]
 }
