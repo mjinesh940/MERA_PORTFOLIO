@@ -22,11 +22,13 @@ const Navbar = () => {
   return (
     <nav className={`navbar ${isSticky ? 'sticky' : ''} ${theme}`}>
       <h1 className="navbar-logo">Jinesh Portfolio</h1>
-      
-      <div className="navbar-right">
-        <button className="theme-toggle-btn" onClick={toggleTheme}>
+
+
+       <button className="theme-toggle-btn" onClick={toggleTheme}>
           {theme === 'dark' ?  '🌙': '☀️'}
         </button>
+        
+      <div className="navbar-right">
 
         <button className="navbar-toggle" onClick={toggleMenu}>
           {isMenuOpen ? '✖' : '☰'}
