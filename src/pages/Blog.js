@@ -4,6 +4,7 @@ import qrImage1 from '../images/QR_REACT_HOOKS.jpg';
 import qrImage2 from '../images/QR_SPRING_BOOT.jpg';
 import qrImage3 from '../images/QR_API.png';
 import qrImage4 from '../images/QR_ABAP_BASICS.png';
+import qrImage5  from '../images/QR_SAP_ODATA.png';
 
 const Blog = () => {
   const blogPosts = [
@@ -35,9 +36,17 @@ const Blog = () => {
       title: 'SAP ABAP BASICS',
       date: 'JUL 30, 2024',
       link: 'https://jmshines940.blogspot.com/2025/07/sap-system-abap-basics-your-gateway-to.html',
-      excerpt: 'A guide to Learn how ABAP works for data manipulation (ALV reports, Scripts, smartforms, Adobe forms, Funtion modules, etc.)',
+      excerpt: 'A guide to Learn how ABAP works for data manipulation (ALV reports, Scripts, smartforms, Adobe forms, Funtion modules, etc.',
       hasQR: true,
       qrImage: qrImage4
+    },
+    {
+      title: 'SAP ODATA',
+      date: 'JUL 26 2025',
+      link: 'https://jmshines940.blogspot.com/2025/07/odata-in-sap.html',
+      excerpt: 'Learn how to create, implement, and consume SAP OData services using ABAP — from basics to advanced features.',
+      hasQR: true,
+      qrImage: qrImage5
     }
   ];
 

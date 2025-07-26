@@ -1,40 +1,38 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useContext } from 'react';
 import { Link } from 'react-router-dom';
 import './Navbar.css';
+import { ThemeContext } from '../ThemeContext';
 
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isSticky, setIsSticky] = useState(false);
+  const { theme, toggleTheme } = useContext(ThemeContext);
 
-  const toggleMenu = () => {
-    setIsMenuOpen(!isMenuOpen);
-  };
-
-  const handleScroll = () => {
-    if (window.scrollY > 50) {
-      setIsSticky(true);
-    } else {
-      setIsSticky(false);
-    }
-  };
-
-  const closeMenu = () => {
-    setIsMenuOpen(false);
-  };
+  const toggleMenu = () => setIsMenuOpen(!isMenuOpen);
+  const closeMenu = () => setIsMenuOpen(false);
 
   useEffect(() => {
-    window.addEventListener('scroll', handleScroll);
-    return () => {
-      window.removeEventListener('scroll', handleScroll);
+    const handleScroll = () => {
+      setIsSticky(window.scrollY > 50);
     };
+    window.addEventListener('scroll', handleScroll);
+    return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
   return (
-    <nav className={`navbar ${isSticky ? 'sticky' : ''}`}>
+    <nav className={`navbar ${isSticky ? 'sticky' : ''} ${theme}`}>
       <h1 className="navbar-logo">Jinesh Portfolio</h1>
-      <button className="navbar-toggle" onClick={toggleMenu}>
-        {isMenuOpen ? 'X' : '☰'}
-      </button>
+      
+      <div className="navbar-right">
+        <button className="theme-toggle-btn" onClick={toggleTheme}>
+          {theme === 'dark' ?  '🌙': '☀️'}
+        </button>
+
+        <button className="navbar-toggle" onClick={toggleMenu}>
+          {isMenuOpen ? '✖' : '☰'}
+        </button>
+      </div>
+
       <ul className={`nav-links ${isMenuOpen ? 'active' : ''}`}>
         <li><Link to="/" onClick={closeMenu}>Home</Link></li>
         <li><Link to="/about" onClick={closeMenu}>About</Link></li>

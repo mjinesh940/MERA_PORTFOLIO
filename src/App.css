@@ -12,7 +12,7 @@ html, body, .app-container {
   font-family: 'Poppins', sans-serif;
   background: url('./images/background') no-repeat center center fixed;
   background-size: cover;
-  color: #b4abab;
+  color: #ffffff;
   overflow-x: hidden;
   position: relative;
 }
@@ -153,4 +153,56 @@ footer {
   button, .btn {
     padding: 0.6rem 1.2rem;
   }
+}
+
+/* ==================================== */
+/* Light Theme Overrides                */
+/* ==================================== */
+body[data-theme='light'] {
+  background: #f4f4f4;
+  color: #111;
+}
+
+body[data-theme='light'] .app-container {
+  background: rgba(255, 255, 255, 0.92);
+  color: #222;
+}
+
+body[data-theme='light'] h1,
+body[data-theme='light'] h2,
+body[data-theme='light'] h3,
+body[data-theme='light'] h4,
+body[data-theme='light'] h5,
+body[data-theme='light'] h6 {
+  color: #111;
+}
+
+body[data-theme='light'] p {
+  color: #333;
+}
+
+body[data-theme='light'] a {
+  color: #007bff;
+}
+
+body[data-theme='light'] a:hover {
+  color: #0056b3;
+}
+
+body[data-theme='light'] button,
+body[data-theme='light'] .btn {
+  background-color: #007bff;
+  color: #fff;
+}
+
+body[data-theme='light'] button:hover,
+body[data-theme='light'] .btn:hover {
+  background-color: #0056b3;
+}
+
+body[data-theme='light'] input,
+body[data-theme='light'] textarea {
+  background-color: #fff;
+  color: #111;
+  border: 1px solid #ccc;
 }
