@@ -9,6 +9,7 @@ import Navbar from './components/Navbar';
 import Footer from './components/Footer';
 import { ThemeContext } from './ThemeContext';
 import './App.css';
+import ChatBot from './components/ChatBot';
 
 function App() {
   const { theme } = useContext(ThemeContext);
@@ -29,6 +30,7 @@ function App() {
           <Route path="/contact" element={<Contact />} />
         </Routes>
         <Footer />
+        <ChatBot /> 
       </div>
     </Router>
   );
