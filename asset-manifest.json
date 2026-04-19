@@ -1,9 +1,8 @@
 {
   "files": {
-    "main.css": "/MERA_PORTFOLIO/static/css/main.77792b07.css",
-    "main.js": "/MERA_PORTFOLIO/static/js/main.0135c5fe.js",
+    "main.css": "/MERA_PORTFOLIO/static/css/main.4d55dc7e.css",
+    "main.js": "/MERA_PORTFOLIO/static/js/main.4439b734.js",
     "static/js/453.1407b060.chunk.js": "/MERA_PORTFOLIO/static/js/453.1407b060.chunk.js",
-    "static/media/background": "/MERA_PORTFOLIO/static/media/background.a92c41b851977e4abd99",
     "static/media/QR_REACT_HOOKS.jpg": "/MERA_PORTFOLIO/static/media/QR_REACT_HOOKS.b6a86779340dd0bbec0b.jpg",
     "static/media/QR_SPRING_BOOT.jpg": "/MERA_PORTFOLIO/static/media/QR_SPRING_BOOT.281b8fe23fec2f53bf2a.jpg",
     "static/media/ABAP.png": "/MERA_PORTFOLIO/static/media/ABAP.c9fd058240afdb2470b7.png",
@@ -15,12 +14,12 @@
     "static/media/QR_SAP_ODATA.png": "/MERA_PORTFOLIO/static/media/QR_SAP_ODATA.556e2d3b216ce7cb0dee.png",
     "static/media/WebTech.png": "/MERA_PORTFOLIO/static/media/WebTech.d7648bf6a2be0b7f764f.png",
     "index.html": "/MERA_PORTFOLIO/index.html",
-    "main.77792b07.css.map": "/MERA_PORTFOLIO/static/css/main.77792b07.css.map",
-    "main.0135c5fe.js.map": "/MERA_PORTFOLIO/static/js/main.0135c5fe.js.map",
+    "main.4d55dc7e.css.map": "/MERA_PORTFOLIO/static/css/main.4d55dc7e.css.map",
+    "main.4439b734.js.map": "/MERA_PORTFOLIO/static/js/main.4439b734.js.map",
     "453.1407b060.chunk.js.map": "/MERA_PORTFOLIO/static/js/453.1407b060.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.77792b07.css",
-    "static/js/main.0135c5fe.js"
+    "static/css/main.4d55dc7e.css",
+    "static/js/main.4439b734.js"
   ]
 }
