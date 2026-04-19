@@ -1,0 +1,138 @@
+.about-container {
+  min-height: 100vh;
+  padding: 0 0 5rem;
+  color: var(--text-primary);
+  font-family: var(--font-body);
+}
+
+/* ── Header ── */
+.about-header {
+  text-align: center;
+  padding: 5rem 2rem 3rem;
+}
+
+.about-title {
+  font-family: var(--font-display);
+  font-size: clamp(3rem, 8vw, 6rem);
+  font-weight: 800;
+  letter-spacing: -2px;
+  background: linear-gradient(120deg, var(--cyan) 0%, var(--violet) 50%, var(--orange) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  margin: 0 0 0.75rem;
+  text-transform: uppercase;
+}
+
+.about-subtitle {
+  font-size: 1.1rem;
+  color: var(--text-secondary);
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  font-size: 0.9rem;
+}
+
+/* ── Content ── */
+.about-content {
+  max-width: 860px;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+.about-text p {
+  font-size: 1.05rem;
+  color: var(--text-secondary);
+  line-height: 1.85;
+  margin-bottom: 1.25rem;
+}
+
+.about-text strong {
+  color: var(--cyan);
+  font-weight: 600;
+}
+
+/* ── What Drives Me ── */
+.about-extra {
+  margin-top: 3.5rem;
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: var(--card-radius);
+  padding: 2rem 2.5rem;
+  position: relative;
+  overflow: hidden;
+}
+
+.about-extra::before {
+  content: '';
+  display: block;
+  height: 3px;
+  background: linear-gradient(90deg, var(--violet), var(--orange));
+  border-radius: var(--card-radius) var(--card-radius) 0 0;
+  margin: -2rem -2.5rem 1.8rem;
+}
+
+.about-extra h2 {
+  font-family: var(--font-display);
+  font-size: 1.6rem;
+  font-weight: 700;
+  color: var(--text-primary);
+  margin-bottom: 1rem;
+  border-bottom: none;
+  letter-spacing: -0.5px;
+  text-transform: none;
+}
+
+.about-extra p {
+  font-size: 1rem;
+  color: var(--text-secondary);
+  line-height: 1.8;
+  margin: 0;
+}
+
+/* ── CTA ── */
+.cta-section {
+  margin-top: 2.5rem;
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.cta-button {
+  display: inline-block;
+  padding: 0.75rem 1.6rem;
+  border-radius: 999px;
+  background: linear-gradient(135deg, var(--red), #ff6f6f);
+  color: #fff !important;
+  font-weight: 600;
+  font-size: 0.95rem;
+  border: none;
+  cursor: pointer;
+  text-decoration: none;
+  transition: transform var(--ease), box-shadow var(--ease);
+  box-shadow: 0 4px 18px rgba(255, 76, 76, 0.3);
+  -webkit-text-fill-color: #fff;
+}
+
+.cta-button:hover {
+  transform: translateY(-2px) scale(1.03);
+  box-shadow: 0 8px 28px rgba(255, 76, 76, 0.5);
+}
+
+@media (max-width: 768px) {
+  .about-content {
+    padding: 0 1.25rem;
+  }
+
+  .cta-section {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .about-extra {
+    padding: 1.5rem;
+  }
+
+  .about-extra::before {
+    margin: -1.5rem -1.5rem 1.5rem;
+  }
+}

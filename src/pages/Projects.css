@@ -1,0 +1,29 @@
+.projects-page {
+  min-height: 100vh;
+  color: var(--text-primary);
+  font-family: var(--font-body);
+  padding-bottom: 3rem;
+}
+
+.projects-page-hero {
+  text-align: center;
+  padding: 5rem 2rem 1rem;
+}
+
+.projects-page-title {
+  font-family: var(--font-display);
+  font-size: clamp(3rem, 7vw, 6rem);
+  font-weight: 705;
+  letter-spacing: -2px;
+  background: linear-gradient(120deg, var(--cyan) 0%, var(--violet) 50%, var(--orange) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  margin: 0 0 0.75rem;
+  text-transform: uppercase;
+}
+
+.projects-page-sub {
+  font-size: 1rem;
+  color: var(--text-secondary);
+}

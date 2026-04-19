@@ -1,0 +1,194 @@
+/* ============================================================
+   JINESH PORTFOLIO — GLOBAL THEME
+   Import this in index.css or App.css
+   ============================================================ */
+
+@import url('https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,400&display=swap');
+
+:root {
+  /* ── Palette ── */
+  --bg:           #0b0d14;
+  --bg-2:         #10121c;
+  --bg-card:      rgba(255, 255, 255, 0.04);
+  --border:       rgba(255, 255, 255, 0.09);
+  --border-hover: rgba(255, 255, 255, 0.18);
+
+  --cyan:         #00d9ff;
+  --violet:       #a78bfa;
+  --orange:       #fb923c;
+  --red:          #ff4c4c;
+
+  --text-primary:   #f1f5f9;
+  --text-secondary: #94a3b8;
+  --text-muted:     #475569;
+
+  /* ── Typography ── */
+  --font-display: 'Syne', sans-serif;
+  --font-body:    'DM Sans', sans-serif;
+
+  /* ── Spacing ── */
+  --section-pad: 5rem 2rem;
+  --card-radius: 18px;
+
+  /* ── Transitions ── */
+  --ease: 0.3s ease;
+}
+
+/* ── Dark mode (default) ── */
+body {
+  background-color: var(--bg);
+  color: var(--text-primary);
+  font-family: var(--font-body);
+  transition: background var(--ease), color var(--ease);
+}
+
+/* ── Light mode overrides ── */
+[data-theme="light"] {
+  --bg:           #f8fafc;
+  --bg-2:         #f1f5f9;
+  --bg-card:      rgba(0, 0, 0, 0.03);
+  --border:       rgba(0, 0, 0, 0.08);
+  --border-hover: rgba(0, 0, 0, 0.16);
+  --text-primary:   #0f172a;
+  --text-secondary: #475569;
+  --text-muted:     #94a3b8;
+}
+
+/* ── Reusable section hero title style ── */
+.page-hero {
+  text-align: center;
+  padding: 5rem 2rem 3rem;
+}
+
+.page-hero-title {
+  font-family: var(--font-display);
+  font-size: clamp(3rem, 8vw, 6rem);
+  font-weight: 800;
+  letter-spacing: -2px;
+  background: linear-gradient(120deg, var(--cyan) 0%, var(--violet) 50%, var(--orange) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  margin: 0 0 1rem;
+  text-transform: uppercase;
+}
+
+.page-hero-subtitle {
+  font-size: 1.1rem;
+  color: var(--text-secondary);
+  margin: 0;
+}
+
+/* ── Glass card ── */
+.glass-card {
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: var(--card-radius);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  transition: transform var(--ease), box-shadow var(--ease), border-color var(--ease);
+}
+
+.glass-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.3);
+  border-color: var(--border-hover);
+}
+
+/* ── Accent top-bar on cards ── */
+.glass-card.accent-cyan  { --card-accent: var(--cyan);   }
+.glass-card.accent-violet{ --card-accent: var(--violet); }
+.glass-card.accent-orange{ --card-accent: var(--orange); }
+.glass-card.accent-red   { --card-accent: var(--red);    }
+
+.glass-card[class*="accent"]::before {
+  content: '';
+  display: block;
+  height: 3px;
+  background: var(--card-accent, var(--cyan));
+  border-radius: var(--card-radius) var(--card-radius) 0 0;
+  margin: -1px -1px 0;
+}
+
+/* ── Tech tag pill ── */
+.tech-tag {
+  font-size: 0.75rem;
+  padding: 4px 10px;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.07);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  color: var(--text-secondary);
+  transition: background var(--ease), color var(--ease);
+  display: inline-block;
+}
+
+.tech-tag:hover {
+  background: rgba(255, 255, 255, 0.13);
+  color: var(--text-primary);
+}
+
+/* ── CTA Button ── */
+.btn-primary {
+  display: inline-block;
+  padding: 0.75rem 1.6rem;
+  border-radius: 999px;
+  background: linear-gradient(135deg, var(--red), #ff6f6f);
+  color: #fff;
+  font-weight: 600;
+  font-size: 0.95rem;
+  border: none;
+  cursor: pointer;
+  text-decoration: none;
+  transition: transform var(--ease), box-shadow var(--ease), opacity var(--ease);
+  box-shadow: 0 4px 18px rgba(255, 76, 76, 0.35);
+}
+
+.btn-primary:hover {
+  transform: translateY(-2px) scale(1.03);
+  box-shadow: 0 8px 28px rgba(255, 76, 76, 0.5);
+  color: #fff;
+}
+
+/* ── Scroll reveal base ── */
+.reveal {
+  opacity: 0;
+  transform: translateY(32px);
+  transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+.reveal.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* ── Section wrapper ── */
+.section-wrap {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: var(--section-pad);
+}
+
+/* ── Section heading underline ── */
+.section-heading {
+  font-family: var(--font-display);
+  font-size: clamp(2rem, 4vw, 3rem);
+  font-weight: 800;
+  color: var(--text-primary);
+  margin: 0 0 0.5rem;
+  letter-spacing: -1px;
+  text-align: center;
+}
+
+.section-heading span {
+  background: linear-gradient(120deg, var(--cyan), var(--violet));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.section-sub {
+  text-align: center;
+  color: var(--text-secondary);
+  font-size: 1rem;
+  margin: 0 0 3rem;
+}

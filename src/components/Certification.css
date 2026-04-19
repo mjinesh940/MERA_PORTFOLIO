@@ -1,0 +1,134 @@
+.certifications-section {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 5rem 2rem;
+  text-align: center;
+}
+
+.certifications-heading {
+  font-family: var(--font-display);
+  font-size: clamp(2.5rem, 5vw, 3.5rem);
+  font-weight: 800;
+  color: var(--text-primary);
+  letter-spacing: -1.5px;
+  margin-bottom: 0.5rem;
+  text-transform: uppercase;
+  position: relative;
+  display: inline-block;
+}
+
+.certifications-heading::after {
+  content: '';
+  display: block;
+  height: 3px;
+  width: 70%;
+  background: linear-gradient(90deg, var(--orange), var(--violet));
+  border-radius: 999px;
+  margin: 0.6rem auto 0;
+}
+
+.cert-subtitle {
+  font-size: 1rem;
+  color: var(--text-secondary);
+  margin: 1.2rem 0 3rem;
+  max-width: 640px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* ── Grid ── */
+.cert-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));
+  gap: 1.5rem;
+  text-align: left;
+}
+
+/* ── Card ── */
+.cert-card {
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: var(--card-radius);
+  padding: 1.6rem 1.8rem;
+  position: relative;
+  overflow: hidden;
+  transition: transform var(--ease), box-shadow var(--ease), border-color var(--ease);
+  backdrop-filter: blur(10px);
+}
+
+/* Rotating accent colors */
+.cert-card:nth-child(3n+1)::before { background: linear-gradient(90deg, var(--cyan), var(--violet)); }
+.cert-card:nth-child(3n+2)::before { background: linear-gradient(90deg, var(--violet), var(--orange)); }
+.cert-card:nth-child(3n+3)::before { background: linear-gradient(90deg, var(--orange), var(--red)); }
+
+.cert-card::before {
+  content: '';
+  display: block;
+  height: 3px;
+  border-radius: var(--card-radius) var(--card-radius) 0 0;
+  position: absolute;
+  top: 0; left: 0; right: 0;
+}
+
+.cert-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 20px 48px rgba(0, 0, 0, 0.32);
+  border-color: var(--border-hover);
+}
+
+.cert-card h3 {
+  font-family: var(--font-display);
+  font-size: 1.05rem;
+  font-weight: 700;
+  color: var(--cyan);
+  margin-bottom: 0.75rem;
+  letter-spacing: -0.2px;
+  border-bottom: none;
+  text-transform: none;
+}
+
+.cert-card p {
+  font-size: 0.875rem;
+  color: var(--text-secondary);
+  margin-bottom: 0.4rem;
+  line-height: 1.6;
+}
+
+.cert-card p strong {
+  color: var(--text-primary);
+  font-weight: 500;
+}
+
+.cert-card a {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  margin-top: 0.75rem;
+  font-size: 0.82rem;
+  font-weight: 600;
+  color: var(--red);
+  text-decoration: none;
+  transition: color var(--ease), gap var(--ease);
+}
+
+.cert-card a:hover {
+  color: #ff6f6f;
+  gap: 7px;
+}
+
+/* ── Responsive ── */
+@media (max-width: 768px) {
+  .certifications-section {
+    padding: 3.5rem 1.25rem;
+  }
+
+  .cert-list {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 480px) {
+  .cert-card {
+    padding: 1.4rem;
+  }
+}

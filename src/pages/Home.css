@@ -1,0 +1,7 @@
+.home {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  color: var(--text-primary);
+  font-family: var(--font-body);
+}
