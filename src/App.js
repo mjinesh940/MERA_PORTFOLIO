@@ -11,6 +11,7 @@ import Footer from './components/Footer';
 import { ThemeContext } from './ThemeContext';
 import './App.css';
 import ChatBot from './components/ChatBot';
+import EnterpriseProjects from './components/Enterprise_Projects';
 
 function App() {
   const { theme } = useContext(ThemeContext);
@@ -28,6 +29,7 @@ function App() {
           <Route path="/about" element={<About />} />
           <Route path="/projects" element={<Projects />} />
           <Route path='/experience' element={<Experience />} />
+          <Route path="/enterpriseprojects" element={<EnterpriseProjects />} />
           <Route path="/blog" element={<Blog />} />
           <Route path="/contact" element={<Contact />} />
         </Routes>

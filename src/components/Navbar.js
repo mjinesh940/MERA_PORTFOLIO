@@ -32,6 +32,7 @@ const Navbar = () => {
     { to: '/about', label: 'About' },
     { to: '/experience', label: 'Experience' },
     { to: '/projects', label: 'Projects' },
+    { to: '/enterpriseprojects', label: 'Enterprise Projects' },
     { to: '/blog', label: 'Blog' },
     { to: '/contact', label: 'Contact' },
   ];
